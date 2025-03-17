@@ -16,8 +16,11 @@ jobs:
       only:
         - master
     steps:
-      - run: echo "A first hello"
+      - run: echo "A first hello111"
       - run: npm -v
       - run: 
           name: Version
           command: node -v
+      - run:
+          name: Install
+          command: npm install
