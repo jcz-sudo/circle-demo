@@ -11,7 +11,7 @@ jobs:
     docker:
       # Specify the version you desire here
       # See: https://circleci.com/developer/images/image/cimg/base
-      - image: circleci/node:10
+      - image: cimg/node:18.20.5
     steps:
       - run: echo "hello circleci"
       - run: npm -v
