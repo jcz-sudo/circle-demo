@@ -21,7 +21,8 @@ jobs:
       - run: node -v
       - add_ssh_keys:
           fingerprints:
-            - "SHA256:S1ruwwzCgstYdVw9TgOp+b9He7hiYnsvOivnJbonlPk"
+            - "SHA256:94gm2WqMCurfCt7cTQh3Q5W5B0eoOJ1nAX9IVw1uFqE"
+      - checkout
       - run:
           name: Install
           command: npm install
