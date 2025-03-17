@@ -12,10 +12,9 @@ jobs:
       # Specify the version you desire here
       # See: https://circleci.com/developer/images/image/cimg/base
       - image: cimg/node:18.20.5
-    branches:
-      only:
-        - main
     steps:
-      - run: echo "hello circleci"
+      - run: echo "A first hello"
       - run: npm -v
-      - run: node -v
+      - run: 
+          name: Version
+          command: node -v
