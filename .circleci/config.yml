@@ -26,9 +26,9 @@ jobs:
           fingerprints:
             - "SHA256:S1ruwwzCgstYdVw9TgOp+b9He7hiYnsvOivnJbonlPk"
       - checkout
-      - run
+      - run:
           name: Install
           command: npm install
-      - run
+      - run:
           name: Build
           command: npm run build
