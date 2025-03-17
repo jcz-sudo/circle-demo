@@ -15,9 +15,6 @@ jobs:
     branches:
       only:
         - main
-        - develop
-        - feature/*
-        - dev
     steps:
       - run: echo "hello circleci"
       - run: npm -v
