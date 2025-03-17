@@ -14,6 +14,10 @@ jobs:
       - image: cimg/node:18.20.5
     steps:
       - run: echo "A first hello111"
+      - add_ssh_keys:
+          fingerprints:
+            - "SHA256:94gm2WqMCurfCt7cTQh3Q5W5B0eoOJ1nAX9IVw1uFqE"
+      - checkout
       - run: npm -v
       - run: 
           name: Version
