@@ -21,6 +21,3 @@ jobs:
       - run: 
           name: Version
           command: node -v
-      - run:
-          name: Install
-          command: npm install
