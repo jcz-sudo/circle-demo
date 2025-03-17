@@ -12,7 +12,23 @@ jobs:
       # Specify the version you desire here
       # See: https://circleci.com/developer/images/image/cimg/base
       - image: cimg/node:18.20.5
+    branches:
+      only:
+        - main
+        - develop
+        - feature/*
+        - dev
     steps:
       - run: echo "hello circleci"
       - run: npm -v
       - run: node -v
+      - add_ssh_keys:
+          fingerprints:
+            - "SHA256:S1ruwwzCgstYdVw9TgOp+b9He7hiYnsvOivnJbonlPk"
+      - checkout
+      - run
+        name: Install dependencies
+        command: npm install\
+      - run
+        name: Build
+        command: npm run build
